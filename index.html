@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Satguru Sweet Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff5e6;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            max-width: 600px;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            background-color: #ff6f00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e55f00;
+        }
+
+        /* Dishes Section */
+        #dishes {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        #dishes h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ff6f00;
+        }
+
+        .dish-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .dish-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .dish-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .dish-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .dish-card h3 {
+            font-size: 1.5rem;
+            padding: 1rem;
+            color: #333;
+        }
+
+        .dish-card p {
+            padding: 0 1rem 1rem;
+            color: #666;
+        }
+
+        /* Subscription Section */
+        #subscribe {
+            background-color: #ff6f00;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        #subscribe h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #subscribe p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .subscribe-form {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .subscribe-form input {
+            padding: 0.8rem;
+            border: none;
+            border-radius: 25px;
+            width: 70%;
+            font-size: 1rem;
+        }
+
+        .subscribe-form button {
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            background-color: #333;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscribe-form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .subscribe-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subscribe-form input {
+                width: 100%;
+            }
+
+            .subscribe-form button {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shree Satguru Sweet Shop</h1>
+        <p>Indulge in the authentic taste of Indian sweets and savory delights crafted with love and tradition.</p>
+        <a href="#dishes" class="btn">Explore Our Menu</a>
+    </header>
+
+    <section id="dishes">
+        <h2>Our Signature Dishes</h2>
+        <div class="dish-grid">
+            <div class="dish-card">
+                <img src="public/2d860a3615c99c4144144bdd9979ea03.avif" alt="Gulab Jamun">
+                <h3>Gulab Jamun</h3>
+                <p>Soft, syrupy balls of sweetness, soaked in rose-flavored syrup.</p>
+            </div>
+            <div class="dish-card">
+                <img src="public/fab8a81435e1f30c8d0a6fb9761287ea.avif" alt="Rasgulla">
+                <h3>Rasgulla</h3>
+                <p>Spongy, juicy dumplings drenched in chilled sugar syrup.</p>
+            </div>
+            <div class="dish-card">
+                <img src="public/9d657f6a4e45cb8949918364528730a3.avif" alt="Jalebi">
+                <h3>Jalebi</h3>
+                <p>Crispy, golden swirls of deep-fried goodness soaked in saffron syrup.</p>
+            </div>
+            <div class="dish-card">
+                <img src="public/8d507538ac5140834b3accca94092e49.avif" alt="Samosa">
+                <h3>Samosa</h3>
+                <p>Spiced potato and pea filling in a crispy, golden pastry.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <h2>Stay Updated!</h2>
+        <p>Join our newsletter for exclusive deals and booking updates.</p>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shree Satguru Sweet Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
